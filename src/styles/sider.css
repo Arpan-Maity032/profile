@@ -1,3 +1,44 @@
 .sider{
-    background-color: white;
+    background-color: rgb(32, 33, 76);
+}
+
+.picture{
+    width: 150px;
+    height:150px;
+    margin-top: 30px;
+    margin-left: 20px;
+    object-fit: cover;
+    border: 5px solid #41576f;
+}
+.intro{
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+}
+.intro h1{
+    font-size: 24px;
+    
+}
+.intro p{
+    font-size: 15px;
+    margin-top: 0;
+    color: darkgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flag{
+    gap: 20px;
+    width:20px;
+    height:20px;
+}
+
+.intro h2{
+    color: darkgreen;
+}
+
+.resume{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
