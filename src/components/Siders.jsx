@@ -27,7 +27,15 @@ const Siders = () => {
               <Button onClick={downloadCv}>Download Resume</Button>
             </div>
         </Sider>
-        <Content><p>This is content space</p></Content>
+        <Content className=''>
+          <div className='welcome'>Welcome to my Profile<br/>
+          I am a <div class="dropping-texts">
+          <div>Developers</div>
+          <div>Designers</div>
+          <div>Coders</div>
+          <div>EVERYONE!</div>
+        </div></div>
+          </Content>
     </Layout>
   )
 }
