@@ -15,8 +15,8 @@ const Siders = () => {
     link.download = "Arpan_Cv.pdf";
     link.click();
   }
-  const skills = [" C++","Java", "Python", "JavaScript", "SQL","HTML5","CSS3","React","Django","Flask","Streamlit","Bootstrap","Express.js",
-"REST APIs","FastAPI"];
+  const skills = [[" C++","Java", "Python", "JavaScript", "SQL"],["HTML5","CSS3","React","Django","Flask","Streamlit","Bootstrap","Express.js",
+"REST APIs","FastAPI"],["MySQL","MongoDB"],["Visual Studio Code (VS Code)","Git","GitHub","Docker","Amazon Web Services (AWS)"],["NumPy","Pandas","Matplotlib","scikit-learn","OpenCV"],["scikit-learn","TensorFlow","Keras"]];
   return (
     <Layout>
         <Sider className='sider'>
@@ -45,13 +45,56 @@ const Siders = () => {
  and software development. <strong>Skilled in Python, c++, Java, SQL, and AWS.</strong> Seeking to apply technical expertise and problem-solving
  abilities to contribute to innovative projects in a growth-focused organization.</h5>
         </Typography>
-        <Typography>
-          <h1>Programming SKills/Knowledge:</h1>
-          {skills.map((skill)=>(
+        <h1>Technical Skills</h1>
+        <Typography className='skills'>
+          <div>
+              <h5> Languages:</h5>
+            {skills[0].map((skill)=>(
             <Tag color="blue" key={skill}>
               {skill}
             </Tag>
           ))}
+          </div>
+          <div>
+              <h5>Web Technologies & Frameworks: </h5>
+            {skills[1].map((skill)=>(
+            <Tag color="blue" key={skill}>
+              {skill}
+            </Tag>
+          ))}
+          </div>
+          <div>
+              <h5>Databases:</h5>
+            {skills[2].map((skill)=>(
+            <Tag color="blue" key={skill}>
+              {skill}
+            </Tag>
+          ))}
+          </div>
+          <div>
+              <h5> Developer Tools & Cloud:</h5>
+            {skills[3].map((skill)=>(
+            <Tag color="blue" key={skill}>
+              {skill}
+            </Tag>
+          ))}
+          </div>
+          <div>
+              <h5> Data Analysis & Scientific Computing:</h5>
+            {skills[4].map((skill)=>(
+            <Tag color="blue" key={skill}>
+              {skill}
+            </Tag>
+          ))}
+          </div>
+          <div>
+              <h5> Machine Learning & Deep Learning:</h5>
+            {skills[5].map((skill)=>(
+            <Tag color="blue" key={skill}>
+              {skill}
+            </Tag>
+          ))}
+          </div>
         </Typography>
           </Content>
     </Layout>
