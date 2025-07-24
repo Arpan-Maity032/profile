@@ -45,9 +45,9 @@ const Siders = () => {
  and software development. <strong>Skilled in Python, c++, Java, SQL, and AWS.</strong> Seeking to apply technical expertise and problem-solving
  abilities to contribute to innovative projects in a growth-focused organization.</h5>
         </Typography>
-        <h1>Technical Skills</h1>
+        <h1 className='tech-skill'>Technical Skills</h1>
         <Typography className='skills'>
-          <div>
+          <div className='skill-name'>
               <h5> Languages:</h5>
             {skills[0].map((skill)=>(
             <Tag color="blue" key={skill}>

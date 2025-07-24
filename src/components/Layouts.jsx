@@ -1,5 +1,6 @@
 import React from 'react';
 import Siders from './Siders';
+import Footers from "../components/Footers";
 
 import { Layout } from "antd";
 import { Content, Header,Footer } from 'antd/es/layout/layout';
@@ -9,7 +10,7 @@ const Layouts = () => {
     <Layout>
         <Header><Headers/></Header>
         <Content><Siders/></Content>
-        <Footer><div><p>Welcome</p></div></Footer>
+        <Footer><Footers/></Footer>
     </Layout>
   )
 };
