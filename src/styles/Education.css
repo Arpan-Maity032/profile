@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Poppins:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.education{
+    height:100vh;
+}
+.clg-name{
+    background-color: #7086a6;
+    transition: all 0.3 ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -ms-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    padding:1.5rem;
+}
+.clg-name h1{
+    color: white;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.edu-tree{
+    background-color: #7086a6;
+    opacity: 0.6;
+    color:white;
+    font-size: large;
+    font-family:"Roboto", sans-serif;
+    
+}
+.performance{
+    background-color: #201919;
+}
