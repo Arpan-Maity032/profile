@@ -1,9 +1,15 @@
 import React from 'react';
-import "../../styles/Education.css"
+import "../../styles/Education.css";
 import { Layout } from "antd";
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
 import { Tree } from "antd";
+
+import PlotlyChart from "./PlotlyChart";
+import PlotlyDgpa from "./PlotlyDgpa";
+
+
+
 const Education = () => {
     const treeData = [
   {
@@ -11,17 +17,34 @@ const Education = () => {
     key: 'btech',
     children: [
       {
-        title: 'ABC Institute of Technology',
+        title: 'Heritage Institute of Technology',
         key: 'btech-college',
         children: [
           {
-            title: '2021 - 2025',
-            key: 'btech-year',
+            title: 'Computer Science Engineering',
+            key: 'branch',
             children: [
-              { title: 'Data Structures', key: 'ds' },
-              { title: 'DBMS', key: 'dbms' },
-              { title: 'Operating Systems', key: 'os' },
+              {
+              title:'2022-2025',
+              key: "duration",
+              }
             ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Diploma',
+    key: 'diploma',
+    children: [
+      {
+        title: 'APC Ray Polytechnic',
+        key: 'diploma-college',
+        children: [
+          {
+            title: '2017-2020',
+            key: 'duration',
           },
         ],
       },
@@ -32,23 +55,21 @@ const Education = () => {
     key: 'hs',
     children: [
       {
-        title: 'XYZ High School',
+        title: 'Baradongal Ramanath Institutions',
         key: 'hs-school',
         children: [
           {
-            title: '2019 - 2021',
+            title: '2016 - 2017',
             key: 'hs-year',
-            children: [
-              { title: 'Physics', key: 'phy' },
-              { title: 'Chemistry', key: 'chem' },
-              { title: 'Mathematics', key: 'math' },
-            ],
+            
           },
         ],
       },
     ],
   },
 ];
+
+
 
   return (
     <Layout className='education'>
@@ -59,8 +80,27 @@ const Education = () => {
         showLine className='edu-tree'/>
         </Sider>
         <Content className='performance'>
-            <h1>Performance</h1>
+          <div>
+            <h1>B.Tech</h1>
+            <h3>Computer Science and Engineering</h3>
+            <div className='visua'>
+              <div className='semmarks'><PlotlyChart/></div>
+              <div className='semdgpa'><PlotlyDgpa/></div>
+            </div>
+          </div>
+          <div>
+            <h1>Other Educations</h1>
+            <ol>
+              <li><a href='https://drive.google.com/file/d/1a8C0d5KfUyvr7ZdHJBQ7WFKj1JKAD1Ae/view?usp=sharing'>Salesforce Developer Internship</a></li>
+              <li>The Fundamental Concepts of Artificial Intelligence and Machine Learning - Udemy</li>
+              <li>Combine the power of Data Science, Machine Learning and Deep Learning to create powerful AI for Real-World
+applications! - Udemy</li>
+                <li>The Complete Full-Stack Web Development Bootcamp - Udemy</li>       
+            </ol>
+            
+          </div>
         </Content>
+        
     </Layout>
   )
 }

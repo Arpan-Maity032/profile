@@ -1,29 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Poppins:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-.education{
-    height:100vh;
+
+.education {
+    height: 100vh;
 }
-.clg-name{
+
+.clg-name {
     background-color: #7086a6;
-    transition: all 0.3 ease;
-    -webkit-transition: all 0.3 ease;
-    -moz-transition: all 0.3 ease;
-    -ms-transition: all 0.3 ease;
-    -o-transition: all 0.3 ease;
-    padding:1.5rem;
+    transition: all 0.3s ease;
+    padding: 1.5rem;
 }
-.clg-name h1{
+
+.clg-name h1 {
     color: white;
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.edu-tree{
+
+.edu-tree {
     background-color: #7086a6;
     opacity: 0.6;
-    color:white;
+    color: white;
     font-size: large;
-    font-family:"Roboto", sans-serif;
-    
+    font-family: "Roboto", sans-serif;
 }
-.performance{
-    background-color: #201919;
+
+.performance {
+    background-color: white;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.performance h1 {
+    color: black;
+    font-size: 28px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.performance h3 {
+    color: rgb(34, 28, 20);
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Visualization Section */
+
+.visua {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.semmarks,
+.semdgpa {
+    flex: 1 1 45%;
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.semmarks > div,
+.semdgpa > div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ✅ Responsive tweaks for small screens */
+
+@media (max-width: 768px) {
+    .semmarks,
+    .semdgpa {
+        flex: 1 1 100%;
+        height: 250px; /* Slightly smaller for small screens */
+    }
+
+    .performance h1 {
+        font-size: 22px;
+    }
+
+    .performance h3 {
+        font-size: 16px;
+    }
+
+    .clg-name h1 {
+        font-size: 24px;
+    }
 }
